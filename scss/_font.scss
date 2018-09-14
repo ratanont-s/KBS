@@ -1,0 +1,37 @@
+// Font - DB Ozone X
+@font-face {
+    font-family: 'DB Ozone X';
+    src: url('../font/DBOzoneX-Light.woff2') format('woff2'),
+    url('../font/DBOzoneX-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'DB Ozone X';
+    src: url('../font/DBOzoneX-Medium.woff2') format('woff2'),
+    url('../font/DBOzoneX-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
+// Font - Arial
+@font-face {
+    font-family: 'Arial';
+    src: url('../font/Arial-BoldMT.woff2') format('woff2'),
+    url('../font/Arial-BoldMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../font/ArialMT.woff2') format('woff2'),
+    url('../font/ArialMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}

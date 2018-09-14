@@ -1,0 +1,162 @@
+// activities-news-page
+.activities-news-page {
+    .card-news {
+        .card {
+            background-color: unset;
+            border: unset;
+            box-shadow: $box-shadow;
+            @include transition($transition-base);
+            .card-text {
+                color: $dark
+            }
+            @include hover-focus {
+                box-shadow: $box-shadow-lg;
+                background-color: $primary;
+                text-decoration: none;
+                @include transition($transition-base);
+                .card-text {
+                    color: white;
+                }
+            }
+        }
+    }
+    .kbs-videos {
+        .main-videos {
+            .videos-categories {
+                .list-group {
+                    .list-group-item {
+                        &:first-child {
+                            border-top: unset;
+                        }
+                        &:last-child {
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+                        }
+                        &.active {
+                            background-color: white;
+                            color: #495057;
+                            border-color: rgba(0, 0, 0, 0.125);
+                            .badge {
+                                background-color: $primary;
+                                color: white;
+                            }
+                            @include hover-focus {
+                                background-color: #f8f9fa;
+                            }
+                        }
+                    }
+                }
+            }
+            .videos-tags {
+                ul {
+                    li {
+                        a {
+                            padding: .5rem 2rem;
+                            border: 1px solid $gray-300;
+                            color: $gray-500;
+                            margin-bottom: .75rem;
+                            display: inline-block;
+                            @include hover-focus {
+                                text-decoration: none;
+                                background-color: $primary;
+                                color: white;
+                                border-color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .card-videos {
+            .card {
+                color: $dark;
+                border: unset;
+                border-bottom: 1px solid $gray-400;
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    border-bottom: 10px solid $greenlight;
+                    width: 10%;
+                    -webkit-transition: width .3s ease;
+                    -moz-transition: width .3s ease;
+                    -ms-transition: width .3s ease;
+                    -o-transition: width .3s ease;
+                    transition: width .3s ease;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    border-bottom: 10px solid $primary;
+                    width: 5%;
+                    -webkit-transition: width .3s ease;
+                    -moz-transition: width .3s ease;
+                    -ms-transition: width .3s ease;
+                    -o-transition: width .3s ease;
+                    transition: width .3s ease;
+                }
+                .embed-responsive-item {
+                    pointer-events: none;
+                }
+                @include hover-focus {
+                    color: $primary;
+                    text-decoration: none;
+                    &:before {
+                        width: 100%;
+                        -webkit-transition: width .3s ease;
+                        -moz-transition: width .3s ease;
+                        -ms-transition: width .3s ease;
+                        -o-transition: width .3s ease;
+                        transition: width .3s ease;
+                    }
+                    &:after {
+                        width: 20%;
+                        -webkit-transition: width .3s ease;
+                        -moz-transition: width .3s ease;
+                        -ms-transition: width .3s ease;
+                        -o-transition: width .3s ease;
+                        transition: width .3s ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Search
+.search-page {
+    .content {
+        .card {
+            border: 3px solid;
+            border-color: $gray-100;
+            box-shadow: $box-shadow-sm;
+            background-color: unset;
+            color: $dark;
+            @include transition($transition-base);
+            &.card-boxset {
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -8px;
+                    left: -10px;
+                    width: 75px;
+                    height: 75px;
+                    background: url('../img/Search/img-ribbon.png') left top no-repeat;
+                    background-size: contain;
+                }
+            }
+            @include hover-focus {
+                border-color: $primary;
+                background-color: $primary;
+                color: white;
+                box-shadow: $box-shadow;
+                text-decoration: none;
+                @include transition($transition-base);
+            }
+        }
+    }
+}

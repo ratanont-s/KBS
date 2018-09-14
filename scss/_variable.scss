@@ -1,0 +1,19 @@
+// Font
+$headings-font-family: 'DB Ozone X';
+$font-family-base: 'Arial';
+$font-size-base: 1.05rem;
+
+// Theme color
+$primary: #00685E;
+$secondary: #B88B58;
+$greenlight: #A9AD3A;
+$btn-gray:#7C7C7C;
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "greenlight": $greenlight,
+  "gray": $btn-gray
+);
+
+// Modal
+$modal-xl: 1110px;
